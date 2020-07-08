@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+</head>
+<body style="justify-content: center;display: flex;align-items: center;">
+   <div class="container" style="text-align: center;">
+    <div class="ui raised very padded text container segment fluid">
+        <div class="time-select">
+            <div class="blue ui buttons">
+                <button data-time="120" class="ui button">2 Minutes</button>
+                <button data-time="300" class="ui button">5 Minutes</button>
+                <button data-time="600" class="ui button">10 Minutes</button>
+              </div>    
+           </div>
+           <audio class="song">
+            <source src="./sounds/rain.mp3" />
+          </audio>
+           <div class="ui icon buttons" style="margin-top: 20px;">
+            <button class="ui button play">
+              <i class="play icon"></i>
+            </button>
+            <button class="ui button">
+              <i class="pause icon"></i>
+            </button>
+            <button class="ui button">
+              <i class="shuffle icon"></i>
+            </button>
+          </div>
+         
+        <h3 class="time-display">0.00</h3>
+        <div class="sound-picker">
+            <button class="ui facebook button" data-sound = "./sounds/rain.mp3">
+                <i class="facebook icon"></i>
+                Facebook
+              </button>
+              <button class="ui twitter button" data-sound = "./sounds/beach.mp3">
+                <i class="twitter icon"></i>
+                Twitter
+              </button>
+        </div>
+      </div>  
+   </div>
+   <script src="app.js"></script>
+</body>
+
+</html>

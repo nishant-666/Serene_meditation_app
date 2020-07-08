@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <title>Serene Meditation App!</title>
+  </head>
+  <body style="justify-content: center;display: flex;align-items: center;overflow: hidden;background-image: linear-gradient(45.34deg, #FFF06F 5.66%, #FFFBD6 92.04%);">
+    <div class="container" style="text-align: center;">
+      <div class="ui raised very padded text container segment fluid">
+        <h2 class="ui header">
+          Serene Meditation App!
+          <div class="sub header">Close your eyes, and let go!</div>
+        </h2>
+        <div class="ui divider"></div>
+          <div class="time-select">
+              
+                  <button data-time="120" class="ui green button">2 Minutes</button>
+                  <button data-time="300" class="ui green button">5 Minutes</button>
+                  <button data-time="600" class="ui green button" style="margin-top: 10px;">10 Minutes</button>
+             
+             </div>
+             <div class="ui divider"></div>
+             <audio class="song">
+              <source src="./sounds/rain.mp3" />
+            </audio>
+             <div class="ui icon buttons ui yellow buttons" style="margin-top: 20px;">
+              <button class="ui button play">
+                <i class="play icon"></i>
+                Play
+              </button>
+              <button class="ui button pause">
+                <i class="pause icon"></i>
+                Pause
+              </button>
+              <button class="ui button replay">
+                <i class="shuffle icon"></i>
+                Replay
+              </button>
+         </div>
+           
+          <h3 class="time-display">0.00</h3>
+          <div class="ui divider"></div>
+          <div class="sound-picker">
+            
+              <button data-sound="./sounds/rain.mp3"  class="ui blue button">
+                  <i class="rain icon"></i>
+                  Rain
+                </button>
+                <button data-sound="./sounds/beach.mp3" class="ui blue button">
+                  <i class="sun icon"></i>
+                  Beach
+                </button>
+
+                <button data-sound="./sounds/windy.mp3" class="ui blue button" style="margin-top: 10px;">
+                  <i class="cloud icon"></i>
+                  Wind
+                </button>
+          </div>
+        </div>  
+     </div>
+    <div class="app">
+    
+        <div class="player-container" style="text-align: center;display: none;">
+      <svg class="moving-outline" width="453" height="453" fill="none">
+                <circle cx="126.5" cy="126.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                </svg>
+              <img src="./svg/replay.svg" class="replay"></img>           
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
