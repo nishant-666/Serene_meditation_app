@@ -1,7 +1,8 @@
 {
   "name": "meditation_app",
   "version": "1.0.0",
-  "description": "An app that can assist you in your meditation by playing different calming sounds.",
+  "description": "A app that can assist you in your meditation by playing different calming sounds",
+  "main": "app.js",
   "author": "Nishant",
   "license": "MIT"
 }
